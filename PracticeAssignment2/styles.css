@@ -1,0 +1,137 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 20px;
+}
+
+#container {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    gap: 10px;
+    padding: 60px;
+    grid-template-rows: auto auto auto auto;
+    grid-template-areas:
+        "header header header"
+        "sidebar content_1 content_1"
+        "sidebar content_2 content_3"
+        "footer footer footer";
+}
+
+#head {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+#smiley {
+    font-size: 100px;
+    text-align: center;
+}
+
+#smiley:hover {
+    animation: spin 2s linear infinite;
+}
+
+@keyframes spin {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+header {
+    grid-area: header;
+    background-color: aqua;
+    animation: moveColor 10s infinite;
+}
+
+#sidebar {
+    grid-area: sidebar;
+    background-color: lightgray;
+}
+
+#content_1 {
+    grid-area: content_1;
+    background-color: lightblue;
+}
+
+#laugh {
+    font-size: 100px;
+    text-align: center;
+}
+
+#laugh:hover {
+    transform: scale(1.5,1.5);
+    transition: transform 0.5s ease;
+}
+
+#content_2 {
+    grid-area: content_2;
+    background-color: lightgreen;
+}
+
+#content_2:hover {
+    filter: blur(5px);
+    transition: filter 0.5s ease;
+}
+
+#content_3:hover {
+    filter: opacity(0);
+    transition: filter 0.5s ease;
+
+}
+
+#content_3 {
+    grid-area: content_3;
+    background-color: lightyellow;
+}
+
+footer {
+    grid-area: footer;
+    background-color: lightcoral;
+}
+@keyframes moveColor {
+    0% {
+        background-color: lightblue;
+        transform: translate(20px, 0);
+    }
+    25% {
+        background-color: lightgreen;
+        transform: translate(-20px, 0px);
+    }
+    50% {
+        background-color: lightyellow;
+        transform: translate(20px, 0);
+    }
+    75% {
+        background-color: lightcoral;
+        transform: translate(-20px, 0px);
+    }
+    100% {
+        background-color: lightblue;
+        transform: translate(0px, 0px);
+    }
+}
+
+#whoa {
+    animation: move 2s infinite;
+}
+
+@keyframes move {
+    0% {
+        transform: translate(0, 0);
+        font-size: large;
+    }
+    50% {
+        transform: translate(75%, 0);
+        font-size: x-large;
+    }
+    100% {
+        transform: translate(0, 0);
+        font-size: large;
+    }
+
+}
