@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Partner Lab 2</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <script src="programs.js"></script>
+</head>
+
+<body>
+        <header>
+            <a href="../album/index.html">Back to Portfolio</a>
+        </header>
+<div class="container">
+
+<h1>Hello <span id="name">User</span>!</h1>
+<p id="message">What would you like to say?</p>
+
+<br>
+
+<label for="username">Enter your name:</label>
+<input type="text" id="username" name="username">
+
+<br>
+
+<label for="usermessage">Enter your message:</label>
+<textarea id="usermessage" name="usermessage" rows="10"></textarea>
+
+<br>
+
+<label for="usercolor">Choose a background color:</label>
+<select id="usercolor" class="colors">
+    <option value="blue">Blue</option>
+    <option value="green">Green</option>
+    <option value="orange">Orange</option>
+    <option value="yellow">Yellow</option>
+</select>
+
+<br>
+
+<input type="button" value="Submit Changes" onclick="userChanges()">
+
+<br><br>
+
+<h2>To Do List</h2>
+
+<label for="todoInput">Add a task:</label>
+<input type="text" id="todoInput">
+
+<input type="button" value="Add Task" onclick="addTodo()">
+
+<ul id="todoList"></ul>
+
+</div>
+</body>
+</html>

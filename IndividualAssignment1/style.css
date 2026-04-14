@@ -1,0 +1,29 @@
+body {
+    background-color: green;
+}
+h1, h2 {
+    color: white;
+    text-align: center;
+}
+p, li {
+    color: lightblue;
+    margin-left: 100px;
+    margin-right: 100px;
+}
+ol, ul {
+    border-style: double;
+}
+ol {
+    list-style-type: upper-roman;
+}
+ul {
+    list-style-type: square;
+}
+#tabhead {
+    text-align: center;
+}
+a {
+    background-color: white;
+    color: black;
+    font-weight: bold;
+}
